@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+<header>
+<title>FDIC Bank History</title>
+
+<link rel="stylesheet" type="text/css" media="all"  href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all"  href="css/css.css" />
+<style>
+#chart {
+  margin-left: -40px;
+  height: 606px;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+.dot {
+  stroke: none;
+  opacity:0.5;
+
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.label {
+  fill: #777;
+}
+
+.year.label {
+  font: 100 196px "Helvetica Neue";
+  fill: #ddd;
+}
+
+.year.label.active {
+  fill: #aaa;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+  cursor: ew-resize;
+}
+
+node rect {
+  cursor: move;
+  fill-opacity: .5;
+  shape-rendering: crispEdges;
+}
+
+.node text {
+  font-family:"Quicksand", Times, serif;
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+
+.link:hover {
+  stroke-opacity: .5;
+  stroke: #66CCCC;
+}
+
+
+    #tooltip {
+            position: absolute;
+            width: 300px;
+            height: auto;
+            padding: 10px;
+           
+            }
+          #tooltip.hidden {
+            display: none;
+          }
+          #tooltip p { margin: 0;
+            font-family: sans-serif; font-size: 16px;
+            line-height: 20px;
+          }
+    #key{
+      font-family: "Bebas", Helvetica, Arial, sans-serif;
+
+    }
+
+    label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+
+</style>
+</header>
+<body>
+<h1>THE BIG FOUR <i>banking</i></h1>
+
+<aside><b><i>Mouseover the year to move forward and backwards through time.</i></b></aside>
+
+<p>This visualization shows the dynamic fluctuation in total assets (<i>x</i>), total deposits (<i>y</i>) and size (radius) of 25 major banks over the last decade; mouseover to read their names.</p>
+
+<h1>Major Banking <i>progression</i></h1>
+<p id="bubbleChart"></p>
+
+<h1>Major Banking <i>mergers</i></h1>
+<p id="mergerChart"></p>
+
+<h1>Major Banking <i>assets vs gdp</i></h1>
+    <div id="tooltip" class="hidden">
+          <label><input type="checkbox"> Sort values</label>
+          <p><span id="key"></span></p>
+          <p><span id="value"></span></p>
+    </div>
+
+<p id="assetBar"></p>
+
+<h1>Total banks <i>vs total assets</i></h1>
+
+<script type="text/javascript" src="js/d3.v3.min.js"></script>
+<script type="text/javascript" src="js/sankey.js"></script>
+<script src="js/mergerChart.js"></script>
+<script src="js/barChart.js"></script>
+<script src="js/bubbleChart.js"></script>
+
+</body>
+</html>

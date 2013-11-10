@@ -1,0 +1,24 @@
+source,target,value
+BOA 2007,BOA 2008,4
+FleetBoston F.C.,BOA 2004,47
+MBNA Corporation,BOA 2005,35
+BOA 2004,BOA 2005,2
+LaSalle,BOA 2007,21
+U.S. Trust Corp,BOA 2007,47
+BOA 2005,BOA 2007,2
+Merrill Lynch,BOA 2008,50
+BOA 2007,BOA 2008,4
+Bank One,JPM 2004,58
+JPM 2004,JPM 2008,2
+Bear Sterns,JPM 2008,1
+Washington Mutual,JPM 2008,1.9
+Wachovia 2004,Wachovia 2006,1
+Westcorp Inc.,Wachovia 2006,3.9
+Golden West Financial,Wachovia 2006,25
+World Savings Bank,Wachovia 2006,25
+Wachovia 2006,Wells Fargo 2008,15.1
+SouthTrust,Wachovia 2004,14.3
+Citicorp,Citi 2001,15
+European American Bank,Citi 2001,14
+Banamex,Citi 2001,14
+Citi 2001,Citi 2008,1
